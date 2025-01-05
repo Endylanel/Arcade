@@ -11,64 +11,92 @@
 <body>
     <div id="snowflakes"></div> <!-- Снежинки -->
 
-    <header>
-        <div class="logo">
-            <h1><i class="fas fa-joystick"></i> Arcade Empires</h1>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo"><i class="fas fa-joystick"></i> Arcade Empires</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#hero">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#games">Игры</a></li>
+                    <li><a href="#community">Сообщество</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#community">Сообщество</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <main>
-        <!-- Герой секция -->
-        <section id="hero" class="hero">
-            <h2>Присоединяйся к лучшему игровому сообществу!</h2>
-            <p>Arcade Empires - это не просто сервер, это новый уровень гейминга и общения!</p>
-            <button class="join-button">Присоединиться</button>
-        </section>
+    <!-- Главная секция -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <h2 class="hero-title">Добро пожаловать в мир Arcade Empires!</h2>
+            <p class="hero-description">Открой для себя невероятные приключения, общайся с друзьями и наслаждайся лучшими играми!</p>
+            <button class="hero-button">Присоединиться сейчас</button>
+        </div>
+    </section>
 
-        <!-- О нас -->
-        <section id="about" class="about">
-            <h2>О нас</h2>
-            <p>Мы объединяем тысячи игроков, которые ищут новые знакомства, эпичные баталии и просто веселье.</p>
-            <div class="icons">
-                <i class="fas fa-gamepad"></i>
-                <i class="fas fa-dice"></i>
-                <i class="fas fa-dragon"></i>
-                <i class="fas fa-chess-knight"></i>
-                <i class="fas fa-star"></i>
+    <!-- О нас -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">О нас</h2>
+            <p class="section-description">Arcade Empires — это игровое сообщество, где каждый найдёт что-то для себя!</p>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Разнообразие игр</h3>
+                    <p>Мы играем во всё: от ретро-игр до современных хитов.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-headset"></i>
+                    <h3>Социальное общение</h3>
+                    <p>Заводи друзей, участвуй в турнирах и создавай команды.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Конкурсы и награды</h3>
+                    <p>Покажи свои навыки и получай призы!</p>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Сообщество -->
-        <section id="community" class="community">
-            <h2>Наше сообщество</h2>
-            <p>Мы играем в разнообразные игры, от классических ретро до современных хитов. Вот несколько из них:</p>
-            <ul class="game-list">
-                <li><i class="fas fa-space-shuttle"></i> Космические битвы</li>
-                <li><i class="fas fa-shield-alt"></i> Фэнтези-сражения</li>
-                <li><i class="fas fa-magic"></i> Магические миры</li>
-                <li><i class="fas fa-car"></i> Гонки</li>
-            </ul>
-        </section>
+    <!-- Список игр -->
+    <section id="games" class="games">
+        <div class="container">
+            <h2 class="section-title">Наши игры</h2>
+            <div class="game-cards">
+                <div class="game-card">
+                    <i class="fas fa-space-shuttle"></i>
+                    <h3>Космические битвы</h3>
+                    <p>Погрузись в галактические сражения!</p>
+                </div>
+                <div class="game-card">
+                    <i class="fas fa-chess-knight"></i>
+                    <h3>Фэнтези сражения</h3>
+                    <p>Испытай свои тактические способности.</p>
+                </div>
+                <div class="game-card">
+                    <i class="fas fa-magic"></i>
+                    <h3>Магические миры</h3>
+                    <p>Окунись в волшебные приключения.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Контакты -->
-        <footer id="contact" class="contact">
-            <h2>Свяжись с нами</h2>
-            <p>Email: arcade@empires.com</p>
+    <!-- Контакты -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <p>Свяжитесь с нами по email: <a href="mailto:arcade@empires.com">arcade@empires.com</a></p>
             <div class="social-icons">
-                <a href="https://discord.com/" target="_blank"><i class="fab fa-discord"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
-        </footer>
-    </main>
+        </div>
+    </footer>
 
     <button id="scrollToTop" title="Наверх"><i class="fas fa-arrow-up"></i></button>
 </body>
