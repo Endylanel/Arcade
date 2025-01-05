@@ -1,16 +1,30 @@
-// Анимация снежинок
-const snowflakesContainer = document.getElementById("snowflakes");
-const totalSnowflakes = 100;
+// Снегопад
+const snowflakes = document.getElementById('snowflakes');
 
-function createSnowflake() {
-    const snowflake = document.createElement("div");
-    snowflake.classList.add("snowflake");
-    snowflake.textContent = "❄";
-    snowflake.style.left = `${Math.random() * 100}vw`;
-    snowflake.style.animationDuration = `${Math.random() * 5 + 5}s`;
-
-    snowflakesContainer.appendChild(snowflake);
-    snowflake.addEventListener("animationend", () => snowflake.remove());
+function generateSnowflakes() {
+    for (let i = 0; i < 50; i++) {
+        let snowflake = document.createElement('div');
+        snowflake.classList.add('snowflake');
+        snowflakes.appendChild(snowflake);
+    }
 }
 
-setInterval(createSnowflake, 200);
+setInterval(generateSnowflakes, 500);
+
+// Анимация прокрутки наверх
+const scrollToTopButton = document.getElementById('scrollToTop');
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        scrollToTopButton.style.display = 'block';
+    } else {
+        scrollToTopButton.style.display = 'none';
+    }
+};
+
+scrollToTopButton.onclick = function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+};
