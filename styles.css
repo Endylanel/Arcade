@@ -1,47 +1,11 @@
-/* Основные стили */
+/* Основные настройки */
 body {
+    background: linear-gradient(to bottom, #1e1e2f, #141414);
+    color: white;
     font-family: 'Arial', sans-serif;
-    background-color: #1a1a1a;
-    color: #fff;
-    text-align: center;
-    background: linear-gradient(to bottom, #121212, #2a2a2a);
     margin: 0;
     padding: 0;
-}
-
-header {
-    background: linear-gradient(45deg, #ff6b81, #ff8e53);
-    padding: 20px 0;
-}
-
-header .logo h1 {
-    font-size: 40px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: white;
-    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #ffcc00;
+    text-align: center;
 }
 
 /* Снежинки */
@@ -53,53 +17,42 @@ nav ul li a:hover {
     opacity: 0.8;
 }
 
-/* Герой секция */
-.hero {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 50px 20px;
-}
-
-.hero h2 {
+/* Заголовки */
+.section-title {
     font-size: 2.5rem;
-    margin-bottom: 20px;
-    animation: fadeIn 2s ease-in-out;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #ffd700;
 }
 
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.join-button {
+/* Кнопки */
+.hero-button {
     background: linear-gradient(45deg, #ff6b81, #f04c84);
-    color: #fff;
     border: none;
     border-radius: 30px;
+    color: white;
     padding: 15px 30px;
-    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
-    transition: background 0.3s ease;
+    transition: 0.3s;
 }
 
-.join-button:hover {
+.hero-button:hover {
     background: linear-gradient(45deg, #ffcc00, #f04c84);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 
-/* Стили секций */
-section {
-    padding: 50px 20px;
-    margin: 20px 0;
+/* Список игр */
+.game-card {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s;
 }
 
-.icons i, .social-icons a i {
-    font-size: 3rem;
-    margin: 0 15px;
-    color: #ffcc00;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.icons i:hover, .social-icons a i:hover {
-    transform: scale(1.2);
-    color: #ff6b81;
+.game-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
